@@ -18,6 +18,18 @@ void BinaryThree::insert(int value) {
     }
 }
 
+void BinaryThree::show() {
+    showInOrder(root);
+}
+
+void BinaryThree::showInOrder(Node &aux) {
+    if (aux != nullptr) {
+        showInOrder(aux->left);
+        cout << aux->value << " ";
+        showInOrder(aux->right);
+    }
+}
+
 Node BinaryThree::insert(Node &aux, int value) {
     if (aux == nullptr) {
         aux = new node;

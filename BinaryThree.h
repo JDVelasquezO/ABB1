@@ -13,12 +13,15 @@ typedef struct node *Node;
 
 class BinaryThree {
 
+private:
     Node root;
     Node insert(Node &node, int value);
+    void showInOrder(Node &node);
 
 public:
     BinaryThree();
     void insert(int value);
+    void show();
 };
 
 #endif //ABB1_BINARYTHREE_H
