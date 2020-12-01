@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.cpp" "/home/jdvelasquezo/CLionProjects/ABB1/cmake-build-debug/CMakeFiles/ABB1.dir/BinaryThree.cpp.o"
+  "/home/jdvelasquezo/CLionProjects/ABB1/Node.cpp" "/home/jdvelasquezo/CLionProjects/ABB1/cmake-build-debug/CMakeFiles/ABB1.dir/Node.cpp.o"
   "/home/jdvelasquezo/CLionProjects/ABB1/main.cpp" "/home/jdvelasquezo/CLionProjects/ABB1/cmake-build-debug/CMakeFiles/ABB1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

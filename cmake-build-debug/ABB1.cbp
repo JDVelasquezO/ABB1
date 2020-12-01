@@ -88,6 +88,12 @@
 		<Unit filename="/home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.h">
 			<Option target="ABB1"/>
 		</Unit>
+		<Unit filename="/home/jdvelasquezo/CLionProjects/ABB1/Node.cpp">
+			<Option target="ABB1"/>
+		</Unit>
+		<Unit filename="/home/jdvelasquezo/CLionProjects/ABB1/Node.h">
+			<Option target="ABB1"/>
+		</Unit>
 		<Unit filename="/home/jdvelasquezo/CLionProjects/ABB1/main.cpp">
 			<Option target="ABB1"/>
 		</Unit>

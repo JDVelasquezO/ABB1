@@ -3,7 +3,12 @@
 
 CMakeFiles/ABB1.dir/BinaryThree.cpp.o: ../BinaryThree.cpp
 CMakeFiles/ABB1.dir/BinaryThree.cpp.o: ../BinaryThree.h
+CMakeFiles/ABB1.dir/BinaryThree.cpp.o: ../Node.h
+
+CMakeFiles/ABB1.dir/Node.cpp.o: ../Node.cpp
+CMakeFiles/ABB1.dir/Node.cpp.o: ../Node.h
 
 CMakeFiles/ABB1.dir/main.cpp.o: ../BinaryThree.h
+CMakeFiles/ABB1.dir/main.cpp.o: ../Node.h
 CMakeFiles/ABB1.dir/main.cpp.o: ../main.cpp
 

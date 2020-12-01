@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "ABB1"
   "ABB1.pdb"
   "CMakeFiles/ABB1.dir/BinaryThree.cpp.o"
+  "CMakeFiles/ABB1.dir/Node.cpp.o"
   "CMakeFiles/ABB1.dir/main.cpp.o"
 )
 

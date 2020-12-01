@@ -7,41 +7,30 @@
 using namespace std;
 
 BinaryThree::BinaryThree() {
-    root = nullptr;
+    this->root = nullptr;
 }
 
 void BinaryThree::insert(int value) {
     try {
         root = insert(root, value);
+
     } catch (const char *e) {
         cout << e << endl;
     }
 }
 
-void BinaryThree::show() {
-    showInOrder(root);
-}
+Node* BinaryThree::insert(Node *aux, int value) {
 
-void BinaryThree::showInOrder(Node &aux) {
-    if (aux != nullptr) {
-        showInOrder(aux->left);
-        cout << aux->value << " ";
-        showInOrder(aux->right);
-    }
-}
-
-Node BinaryThree::insert(Node &aux, int value) {
     if (aux == nullptr) {
-        aux = new node;
-        aux->value = value;
-        aux->right = nullptr;
-        aux->left = nullptr;
-    } else if (value < aux->value) {
-        Node left = insert(aux->left, value);
-        aux->left = left;
-    } else if (value > aux->value) {
-        Node right = insert(aux->right, value);
-        aux->right = right;
+        aux = new Node(value);
+        aux->setRight(nullptr);
+        aux->setLeft(nullptr);
+    } else if (value < aux->getValue()) {
+        Node* left = insert(aux->getLeft(), value);
+        aux->setLeft(left);
+    } else if (value > aux->getValue()) {
+        Node* right = insert(aux->getRight(), value);
+        aux->setRight(right);
     } else {
         throw "Node duplicated";
     }
@@ -49,18 +38,30 @@ Node BinaryThree::insert(Node &aux, int value) {
     return aux;
 }
 
-Node BinaryThree::search(int value) {
+void BinaryThree::show() {
+    showInOrder(root);
+}
+
+void BinaryThree::showInOrder(Node *aux) {
+    if (aux != nullptr) {
+        showInOrder(aux->getLeft());
+        cout << aux->getValue() << " " ;
+        showInOrder(aux->getRight());
+    }
+}
+
+Node* BinaryThree::search(int value) {
     return search(root, value);
 }
 
-Node BinaryThree::search(Node &aux, int value) {
+Node* BinaryThree::search(Node *aux, int value) {
     if (aux == nullptr) {
         throw "Node not founded";
-    } else if (value == aux->value) {
+    } else if (value == aux->getValue()) {
         return aux;
-    } else if (value < aux->value) {
-        return search(aux->left, value);
+    } else if (value < aux->getValue()) {
+        return search(aux->getLeft(), value);
     } else {
-        return search(aux->right, value);
+        return search(aux->getRight(), value);
     }
 }

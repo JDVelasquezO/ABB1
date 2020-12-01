@@ -170,6 +170,33 @@ BinaryThree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ABB1.dir/build.make CMakeFiles/ABB1.dir/BinaryThree.cpp.s
 .PHONY : BinaryThree.cpp.s
 
+Node.o: Node.cpp.o
+
+.PHONY : Node.o
+
+# target to build an object file
+Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ABB1.dir/build.make CMakeFiles/ABB1.dir/Node.cpp.o
+.PHONY : Node.cpp.o
+
+Node.i: Node.cpp.i
+
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ABB1.dir/build.make CMakeFiles/ABB1.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ABB1.dir/build.make CMakeFiles/ABB1.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -209,6 +236,9 @@ help:
 	@echo "... BinaryThree.o"
 	@echo "... BinaryThree.i"
 	@echo "... BinaryThree.s"
+	@echo "... Node.o"
+	@echo "... Node.i"
+	@echo "... Node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

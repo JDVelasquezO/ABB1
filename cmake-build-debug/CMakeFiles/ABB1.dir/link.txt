@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ABB1.dir/main.cpp.o CMakeFiles/ABB1.dir/BinaryThree.cpp.o  -o ABB1 
+/usr/bin/c++  -g   CMakeFiles/ABB1.dir/main.cpp.o CMakeFiles/ABB1.dir/BinaryThree.cpp.o CMakeFiles/ABB1.dir/Node.cpp.o  -o ABB1 

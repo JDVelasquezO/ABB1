@@ -3,4 +3,4 @@ project(ABB1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ABB1 main.cpp BinaryThree.cpp BinaryThree.h)
+add_executable(ABB1 main.cpp BinaryThree.cpp BinaryThree.h Node.cpp Node.h)
