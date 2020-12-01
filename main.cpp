@@ -13,7 +13,15 @@ int main() {
     three->insert(20);
     three->insert(100);
 
-    three->show();
+    // three->show();
 
+    try {
+        Node value = three->search(20);
+        cout << value << endl;
+    } catch (const char *e) {
+        cout << e << endl;
+    }
+
+    delete three;
     return 0;
 }

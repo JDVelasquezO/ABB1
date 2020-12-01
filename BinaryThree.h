@@ -22,6 +22,9 @@ public:
     BinaryThree();
     void insert(int value);
     void show();
+
+    Node search(int value);
+    Node search(Node &node, int value);
 };
 
 #endif //ABB1_BINARYTHREE_H

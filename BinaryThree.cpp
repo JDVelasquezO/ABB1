@@ -48,3 +48,19 @@ Node BinaryThree::insert(Node &aux, int value) {
 
     return aux;
 }
+
+Node BinaryThree::search(int value) {
+    return search(root, value);
+}
+
+Node BinaryThree::search(Node &aux, int value) {
+    if (aux == nullptr) {
+        throw "Node not founded";
+    } else if (value == aux->value) {
+        return aux;
+    } else if (value < aux->value) {
+        return search(aux->left, value);
+    } else {
+        return search(aux->right, value);
+    }
+}
