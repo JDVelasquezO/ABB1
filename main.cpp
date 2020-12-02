@@ -3,21 +3,9 @@
 
 using namespace std;
 
-int main() {
-
-    BinaryThree *three = new BinaryThree();
-
-    three->insert(4);
-    three->insert(2);
-    three->insert(1);
-    three->insert(3);
-    three->insert(8);
-    three->insert(9);
-
-    three->show();
-    cout << endl;
+void showSearch(BinaryThree* three, int data) {
     try {
-        Node* value = three->search(8);
+        Node* value = three->search(data);
 
         cout << "Valor: " << value->getValue() << endl;
         if (value->getLeft() != nullptr)
@@ -27,6 +15,34 @@ int main() {
     } catch (const char *e) {
         cout << e << endl;
     }
+}
+
+int main() {
+
+    BinaryThree *three = new BinaryThree();
+
+    three->insert(10);
+    three->insert(5);
+    three->insert(7);
+    three->insert(15);
+    three->insert(12);
+    three->insert(20);
+
+    three->show();
+    cout << endl;
+    cout << endl;
+
+    showSearch(three, 10);
+    cout << endl;
+
+    try {
+        three->remove(10);
+    } catch (const char *e) {
+        cout << e << endl;
+    }
+    cout << endl;
+
+    showSearch(three, 7);
 
     delete three;
     return 0;

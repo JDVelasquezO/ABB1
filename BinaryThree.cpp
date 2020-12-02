@@ -65,3 +65,52 @@ Node* BinaryThree::search(Node *aux, int value) {
         return search(aux->getRight(), value);
     }
 }
+
+void BinaryThree::remove(int value) {
+    root = remove(root, value);
+}
+
+Node* BinaryThree::changeNode(Node *aux) {
+    Node* node = aux;
+    Node* gLeft = aux->getLeft();
+
+    while (gLeft->getRight() != nullptr) {
+        node = gLeft;
+        gLeft = gLeft->getRight();
+    }
+
+    aux->setValue(gLeft->getValue());
+
+    if (node == aux) {
+        node->setLeft(gLeft->getLeft());
+    } else {
+        node->setRight(gLeft->getRight());
+    }
+
+    return gLeft;
+}
+
+Node* BinaryThree::remove(Node *aux, int value) {
+    if (aux == nullptr) {
+        throw "Node not founded";
+    } else if (value < aux->getValue()) {
+        Node* left = remove(aux->getLeft(), value);
+        aux->setLeft(left);
+    } else if (value > aux->getValue()) {
+        Node* right = remove(aux->getRight(), value);
+        aux->setRight(right);
+    } else {
+        Node* node = aux;
+        if (node->getRight() == nullptr) {
+            aux = node->getLeft();
+        } else if (node->getLeft() == nullptr) {
+            aux = node->getRight();
+        } else {
+            node = changeNode(node);
+        }
+
+        node = nullptr;
+    }
+
+    return aux;
+}

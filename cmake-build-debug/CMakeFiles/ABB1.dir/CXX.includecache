@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.cpp
-iostream
--
-BinaryThree.h
-/home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.h
-
 /home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.h
 Node.h
 /home/jdvelasquezo/CLionProjects/ABB1/Node.h
 
 /home/jdvelasquezo/CLionProjects/ABB1/Node.h
+
+/home/jdvelasquezo/CLionProjects/ABB1/main.cpp
+iostream
+-
+BinaryThree.h
+/home/jdvelasquezo/CLionProjects/ABB1/BinaryThree.h
 
