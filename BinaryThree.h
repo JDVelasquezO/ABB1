@@ -21,6 +21,7 @@ public:
     void show();
     Node* search(int value);
     void remove(int value);
+    bool isLeaf(int value);
 };
 
 #endif //ABB1_BINARYTHREE_H

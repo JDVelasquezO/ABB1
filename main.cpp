@@ -23,6 +23,7 @@ int main() {
 
     three->insert(10);
     three->insert(5);
+    three->insert(3);
     three->insert(7);
     three->insert(15);
     three->insert(12);
@@ -32,17 +33,17 @@ int main() {
     cout << endl;
     cout << endl;
 
-    showSearch(three, 10);
+    /*showSearch(three, 5);
     cout << endl;
 
-    try {
-        three->remove(10);
-    } catch (const char *e) {
-        cout << e << endl;
-    }
+    three->remove(7);
     cout << endl;
 
-    showSearch(three, 7);
+    showSearch(three, 5);*/
+
+    cout << three->isLeaf(3) << endl;
+    cout << three->isLeaf(7) << endl;
+    cout << three->isLeaf(12) << endl;
 
     delete three;
     return 0;

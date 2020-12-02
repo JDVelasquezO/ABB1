@@ -114,3 +114,13 @@ Node* BinaryThree::remove(Node *aux, int value) {
 
     return aux;
 }
+
+bool BinaryThree::isLeaf(int value) {
+    Node* node = search(value);
+
+    if (node->getRight() == nullptr && node->getLeft() == nullptr) {
+        return true;
+    }
+
+    return false;
+}
